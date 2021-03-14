@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    Transformari de faza
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .fundal{
+        background-image:url('munte.jpg');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        margin:0;
+    }
+
+    .logo{
+            width:290px;
+            height:85px;
+            padding:0px 150px;
+        }
+        ul{
+            list-style-type:none;
+            padding:1% 0%;
+            width:100%;
+            overflow:hidden;
+            background-color:rgb(42, 187, 245);
+            display:block;
+            margin:0;
+            position:fixed;
+            top:0;
+        }
+        li{
+            float:left;
+        }
+        li a {
+            color:white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            font-size:110%;
+            text-align:left;
+            padding:35px 20px;
+            text-decoration:none;
+            display:block;
+            border-top-style:hidden;
+            border-bottom-style:hidden;
+            border-left-style:groove;
+            border-right-style:groove;
+            border-width:1px;
+            border-color:rgb(77, 89, 194);
+        }
+        li a:hover, .dropdown:hover .curioz{
+            background-color:rgb(25, 150, 189);
+        }
+        .dropdown-content {
+            display:none;
+            position:absolute;
+            background-color:rgb(42, 187, 245);
+            margin:0;
+            position:fixed;
+            top:0;
+            margin-top:7.5%;
+            
+        }
+        .dropdown-content a {
+            color:white;
+            padding:30px 15px;
+            display:block;
+            text-align: center;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display:block;
+        }
+        .titlu{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin-top:-107%;
+            margin-left:34%;
+            font-size:250%;
+            color:rgb(138, 8, 8);
+            text-shadow: 2px 2px 5px rgb(255, 255, 255);
+         }
+        .def1 {
+            font-size:150%;
+            font-family:Georgia, 'Times New Roman', Times, sans-serif;
+            text-indent:5%;
+            width:80%;
+            text-align:justify;
+            margin-left:8%;
+            font-weight: bold;
+            color:rgb(4, 2, 119);
+            text-shadow:2px 2px 5px sandybrown;
+            background-color:rgba(255, 240, 197, 0.747);
+        }
+        .titlu1{
+            font-size:200%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(247, 78, 0);
+            margin-left:5%;
+            text-shadow:2px 2px black;
+            width:35%;
+            margin-top:43%;
+        }
+        .titlu2{
+            font-size:200%;
+            margin-top:4%;
+            margin-bottom:4%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(247, 78, 0);
+            margin-left:5%;
+            text-shadow:2px 2px black;
+            width:35%;
+        }
+        .text1 {
+            font-size:150%;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left:25%;
+            margin-right:20%;
+            margin-top:5%;
+            text-align:justify;
+            color:blanchedalmond;
+            text-shadow:2px 2px rgba(236, 0, 0, 0.815);
+            background-color:rgb(11, 69, 156);
+            width:640px;
+        }
+        .poza1 {
+            display:block;
+            width:20%;
+            height:20%;
+            float:left;
+            margin-left:2%;
+            margin-top:7%;
+        }
+        .poza2 {
+            display:block;
+            width:20%;
+            height:20%;
+            float:right;
+            margin-right:2%;
+            margin-top:7%;
+        }
+        .text2{
+            font-size:150%;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left:25%;
+            margin-right:20%;
+            margin-top:-21%;
+            text-align:justify;
+            color:blanchedalmond;
+            text-shadow:2px 2px rgba(236, 0, 0, 0.815);
+            background-color:rgb(11, 69, 156);
+            width:640px;
+        }
+        .titlu3{
+            font-size:200%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(247, 78, 0);
+            margin-left:5%;
+            text-shadow:2px 2px black;
+            width:35%;
+            margin-top:82%;
+        }
+        .text3{
+            font-size:150%;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left:25%;
+            margin-right:20%;
+            text-align:justify;
+            color:blanchedalmond;
+            text-shadow:2px 2px rgba(236, 0, 0, 0.815);
+            background-color:rgb(11, 69, 156);
+            width:640px;
+            margin-top:-21%;
+        }
+        .schema{
+            width:55%;
+            height:20%;
+            margin-left:20%;
+            transition: width 2s, height 2s;
+        }
+        .schema:hover{
+            width:59%;
+            height:21%;
+        }
+        .diagrama1{
+            width:20%;
+            margin-left:2%;
+            margin-top:4%;
+            margin-bottom:2%
+        }
+        .ceai{
+            width:20%;
+            margin-left:2%;
+            margin-top:5%;
+        }
+        .gheizer{
+            width:20%;
+            margin-top:-13%;
+            margin-left:76%;
+        }
+        .carbonica{
+            width:22%;
+            margin-left:53%;
+            margin-bottom:3%;
+        }
+
+    ::-webkit-scrollbar{
+        width:3.5vh;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow:inset 0 0 10px rgb(58, 0, 165);
+        border-radius:10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color:rgb(133, 9, 9);
+        border-radius:10px;
+        border-width:3px;
+        border-style:dotted;
+        border-color: rgb(255, 255, 255);
+    }
+</style>
+
+</head>
+<body class="fundal">
+    <p class="titlu1">Topirea și solidificarea</p>
+<img class="poza1" src="cuburi.jpg">
+<img class="poza2" src="topireghetari.jpg">
+<p class="text1">
+<b>Solid-> Lichid</b>: se realizează cu absorbție de căldură din exterior.
+<br>
+<b>Lichid-> Solid</b>: se realizează cu cedare de căldură în exterior.
+<br>
+O structură cristalină este o aranjare (dispunere) generală unică 
+a atomilor sau moleculelor unei substanțe solide sau lichide cristaline. (ex: gheața, metalul)
+În timpul topirii/ solidificării substanței cristaline temperatura ramâne constantă.
+<br>
+Un studiu efectuat de NASA privind topirea ghețarilor arată că aproximativ 150 miliarde de tone de gheață dispar anual, astfel nivelul 
+oceanului planetar crescând cu 4 mm/an.
+</p>
+<p class="titlu2">Vaporizarea și condensarea</p>
+<img class="ceai" src="ceai.jpeg">
+<img class="gheizer" src="gheizer.jpeg">
+<p class="text2">
+    <b>Lichid-> Vapori</b>: se realizează  cu absorbție de căldură din exterior.
+    <br>
+    <b>Vapori-> Lichid</b>: se realizează cu cedare de căldură în exterior.
+    <br>
+    Evaporarea are loc la orice temperatură, iar în timpul acesteia temperatura lichidului scade. Viteza evaporării crește odată cu creșterea temperaturii.
+    În timp ce vaporizarea în atmosferă este un proces lent, vaporizarea în vid se produce instantaneu. Vidul reprezintă absența materiei dintr-un anumit spațiu.( ex: spațiul interstelar)<br>
+    Apa în natură se află sub forma vaporilor și particulelor. Moleculele de apă combinate cu mici particule de praf, sare și fum din atmosferă, formează mici picături, ce se unesc, alcătuind norii. Aceștia se formează în atmosferă, pentru că aerul cu vapori de apă se ridică, apoi se răcește.
+</p>
+<ul>
+    <li><a href="our phisics web page.html"><b>HOME</b></a></li>
+    <li><a  href="experimente.html"> <b>EXPERIMENTE</b> </a></li>
+    <li class="dropdown"><a href="transformari.html" class="curioz"><b>TRANSFORMĂRI DE FAZĂ</b></a>
+        <div class="dropdown-content">
+    <a href="intrebari.html"><b>ÎNTREBĂRI ȘI RĂSPUNSURI</b></a>
+    </div>
+    </li>
+    <li class="dropdown"><a href="ThomasAndrews.html" class="curioz"><b>THOMAS ANDREWS</b> </a>
+    <li><img class="logo"src="logo.png"></li>
+    </ul>
+<h1 class="titlu">Transformări de fază</h1>
+<p class="def1">Experiența a dovedit că în aceleași condiții de temperatură și presiune, o substanță poate să coexiste în mai multe stări de agregare. Aceste stări se numesc faze.
+Trecerea unei substanțe dintr-o fază in alta se numește transformare de fază.
+</p> 
+        <img class='schema' src="schema.jpg">
+<p class="titlu3"> Sublimarea și desublimarea</p>
+<img class="diagrama1" src="diagrama.jpeg">
+<img class="carbonica" src="gcarb.jpg">
+<p class="text3"><b>Solid->Vapori</b>: se realizează cu absorbție de căldură din exterior.
+<br>
+<b>Vapori->Solid</b>: se realizează cu cedare de căldură în exterior.
+<br>
+Zăpada și gheața sublimează trecând direct în vapori. Așa se explică uscarea rufelor înghețate, iarna. Tot prin fenomenul de sublimare se explică și mirosul unor corpuri solide. (săpun, detergent etc.)
+<br>
+Starea triplă este starea în care coexistă cele trei stări de agregare ale unei substanțe.
+</p>
+</body>
+</html>

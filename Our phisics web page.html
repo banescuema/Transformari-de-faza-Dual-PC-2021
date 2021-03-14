@@ -1,0 +1,283 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #fundal{
+            background:url('apa.jpg');
+            background-attachment:fixed;
+            background-size:cover;
+            background-repeat:no-repeat;
+            margin:0;
+        }
+        p{
+            font-size:25px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .logo{
+            width:290px;
+            height:85px;
+            padding:0px 150px;
+        }
+        ul{
+            list-style-type:none;
+            padding:1% 0%;
+            width:100%;
+            overflow:hidden;
+            background-color:rgb(42, 187, 245);
+            display:block;
+            margin:0;
+            position:fixed;
+            top:0;
+        }
+        li{
+            float:left;
+        }
+        li a {
+            color:white;
+            text-align:left;
+            font-size:110%;
+            padding:35px 20px;
+            text-decoration:none;
+            display:block;
+            border-top-style:hidden;
+            border-bottom-style:hidden;
+            border-left-style:groove;
+            border-right-style:groove;
+            border-width:1px;
+            border-color:rgb(77, 89, 194);
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        li a:hover, .dropdown:hover .curioz{
+            background-color:rgb(25, 150, 189);
+        }
+        .dropdown-content {
+            display:none;
+            position:absolute;
+            background-color:rgb(42, 187, 245);
+            margin:0;
+            position:fixed;
+            top:0;
+            margin-top:7.5%;
+            
+        }
+        .dropdown-content a {
+            color:white;
+            padding:30px 20px;
+            display:block;
+            text-align: center;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display:block;
+        }
+            .caseta{
+               border: 2px solid;
+               padding:20px;
+               overflow:auto;
+               width: 500px;
+               margin-left:29.1%;
+               margin-top:-15%;
+               background-color:rgba(152, 167, 255, 0.897);
+            
+           }
+                .in1{
+                    color:rgb(15, 44, 139)
+                }
+                .in2{
+                    color:rgb(0, 0, 0);
+                     text-align:justify
+                }
+                .buton1{
+                    height:100px;
+                    width:100px;
+                    background-color:rgb(43, 92, 255);
+                    padding:10px;
+                    color:rgb(255, 241, 204);
+                    font-weight:bolder;
+                    font-size:20px;
+                    transition:width 2s, height 2s, transform 2s;
+                    border-radius:3px;
+                    margin-top:-54%;
+                    margin-bottom:17%;
+                    margin-left:73%;
+                }
+                .buton1:hover{
+                    width:160px;
+                    height:180px;
+                    transform:rotate(360deg);
+                }
+                .buton2{
+                    display:none;
+                    color:rgb(0, 0, 0);
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size:21px;
+                    
+                }
+                .buton1:hover .buton2{
+                    display:block;
+                }
+                .img1{
+                height:40%;
+                width:20%;
+                border-radius:5px;
+                box-shadow:5px 5px 5px rgb(22, 22, 122);
+                transform:rotateX(12deg) rotateY(20deg) rotateZ(3deg);
+                margin-left:1.5%;
+                margin-top:1%;
+                transition:  transform 2s;
+                }
+                .img1:hover{
+                    transform:rotate(0deg);
+                }
+                .img2{
+                height:40%;
+                width:20%;
+                border-radius:5px;
+                box-shadow:5px 5px 5px rgb(22, 22, 122);
+                margin-left:78%;
+                margin-top:-18.4%;
+                transform:rotateX(12deg) rotateY(-20deg) rotateZ(-3deg);              
+                transition:  transform 2s;
+                }
+                .img2:hover{
+                    transform:rotate(0deg);
+                }
+                .text1{
+                    margin-left:2%;
+                    margin-top:5%;
+                    width:30%;
+                    color:rgb(161, 0, 62);
+                    text-align:justify;
+                    background-color:white;
+                    border-radius:6%;
+                    padding: 10px;
+                }
+                .text2{ 
+                    margin-right:2%;
+                    margin-top:-19%;
+                    width:30%;
+                    color:rgb(161, 0, 62);
+                    float:right;
+                    text-align:justify;
+                    background-color:white;
+                    border-radius:6%;
+                    padding:10px;
+                }
+                .titlu-principal{
+                    text-align:center;
+                    margin-top:10%;
+                    color: #000000;
+                    text-shadow: -0.2vh -0.2vh 0 rgb(255, 187, 0), -0.4vh -0.4vh 0 rgb(255, 81, 0);
+                }
+                .marquestile{
+                    font-size:40px;
+                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    color:rgb(255, 153, 149);
+                    word-spacing:5px;
+                    text-shadow:0 0 10px #030303,
+                    0 0 10px #030303,
+                    0 0 10px #030303,
+                    0 0 10px #030303,
+                    0 0 10px #030303;
+                }
+                .miscare{
+                    padding:0px 200px;
+                }
+            </style>
+            <style>
+
+                #slideshow{
+                   width:620px;
+                   height:430px;
+                   overflow:hidden;
+                   margin-left:3.5%;
+                   margin-top:3.5%;
+                   margin-bottom:32%;
+                   border: 5px double pink;
+                   border-image: -webkit-linear-gradient(45deg, rgb(189, 3, 3),rgb(255, 255, 255),rgb(0, 11, 107), rgb(189, 3, 3)) 20 stretch;
+                }
+                .ariaslideului{
+                   width:2480px;
+                   animation:slide 20s ease infinite;
+                }
+                .imagini{
+                   width:620px;
+                   height:430px;
+                }
+                .slide{
+                    float:left;
+                    width:620px;
+                    height:430px;
+                }
+                @keyframes slide{
+                    20%{margin-left:0px}
+                    30%{margin-left:-620px}
+                    50%{margin-left:-620px}
+                    60%{margin-left:-1240px}
+                    70%{margin-left:-1240px}
+                    80%{margin-left:-1860px}
+                    90%{margin-left:-1860px}
+                }
+
+
+    ::-webkit-scrollbar{
+        width:3.5vh;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow:inset 0 0 10px rgb(58, 0, 165);
+        border-radius:10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color:rgb(133, 9, 9);
+        border-radius:10px;
+        border-width:3px;
+        border-style:dotted;
+        border-color: rgb(255, 255, 255);
+    }
+            </style>
+<title>Our web page</title>
+</head>
+
+<body id="fundal" style="background:url('apa.jpg'); background-attachment:fixed;">
+<h1 class="titlu-principal"><i>Viața inseamnă evoluție și transformare</i></h1>
+   <div clas="perspectiva">
+        <img class="img1" src="fulg.jpg">
+    </div>
+    <div class="perspectiva">
+        <img class="img2" src="imagetr.webp">
+    </div>
+
+   <div class="caseta">
+    <h2 class="in1">De ce este atât de importantă fizica în viața noastră?</h2>
+    <h3 class="in2"> Pentru că tot ceea ce ne înconjoară ține de domeniul fizicii. Datorită ei putem întelege cum se produc fenomenele, când se produc și de ce. Fizica este una dintre științele fundamentale ce stă la baza economiei tehnologizate: imagistică medicală, electricitatea, rețelele de telefonie și rețelele de calculatoare(world-wide-web)  </h3>
+</div>
+<p class="text1"><b>"Fizica nu schimbă natura lumii pe care o studiază şi nici o ştiinţă comportamentală nu poate schimba esenţa naturii omeneşti, cu toate că ambele ştiinţe aduc tehnologiei o vasta putere de a-şi manipula materiile." - B.F.Skinner</b></p>
+<p class="text2"><b>"Scopul fizicii este acela de a schița cat mai concis evoluția conceptelor fundamentale, evoluție dependentă de faptele experienței și de tendința spre atingerea perfecțiunii interne a sistemului."  -Albert Einstein</b></p>
+<br>
+<div class="miscare">
+<marquee behavior="alternate"><p class="marquestile">Să știm mai multe despre transformările de fază</p></marquee>
+</div>
+<div id="slideshow">
+    <div class="ariaslideului">
+    <div class="slide"><img class="imagini" src="cicluapa.jpg"></div>
+    <div class="slide"><img class="imagini" src="apa3.jpg "></div>
+    <div class="slide"><img class="imagini" src="apa13.png"></div>
+    <div class="slide"><img class="imagini" src="apa11.jpg"></div>
+  </div>
+</div>
+
+<div class="buton1">Web designeri<div class="buton2 "><b><br>Ema Ioana Bănescu</b><br><b>Adina Florina Ion</b></div></div>
+<ul>
+    <li><a href="our phisics web page.html"><b>HOME</b></a></li>
+    <li><a  href="experimente.html"> <b>EXPERIMENTE</b> </a></li>
+    <li class="dropdown"><a href="transformari.html" class="curioz"><b>TRANSFORMĂRI DE FAZĂ</b></a>
+        <div class="dropdown-content">
+    <a href="intrebari.html"><b>ÎNTREBĂRI ȘI RĂSPUNSURI</b></a>
+    </div>
+    </li>
+    <li class="dropdown"><a href="ThomasAndrews.html" class="curioz"><b>THOMAS ANDREWS</b> </a>
+    <li><img class="logo"src="logo.png"></li>
+    </ul>
+</body>
+</html>
